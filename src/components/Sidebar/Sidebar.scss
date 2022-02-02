@@ -1,0 +1,117 @@
+@import '../../sassStyles/variables';
+@import '../../sassStyles/mixins';
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 75px;
+    max-width: max-content;
+    background-color: rebeccapurple;
+    padding-left: 0.7rem;
+    overflow: hidden;
+    @include transition(0.3s , linear);
+    color: white;
+
+   &.opened
+    {
+        width: 20rem;
+    }
+
+    &__toggler{
+        padding: 1rem 0;
+    }
+
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        opacity: 0;
+        transition: 0.1s linear;
+
+        &.opened{
+        transition: 0.3s 0.3s linear;
+            opacity: 1;
+        }
+
+        &__wrapper {
+            width: 60%;
+            overflow: hidden;
+            border-radius: 50%;
+            & img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__content {
+
+        &__list {
+            list-style: none;
+
+            &__item__link {
+                display: flex;
+                align-items: center;
+                border-radius: $rounded-border 0 0 $rounded-border;
+                transition: 0.2s;
+                position: relative;
+                cursor: pointer;
+                &:hover {
+                    background-color: yellow;
+                }
+
+                & p {
+                    padding: 0 6rem 0 1rem;
+                }
+
+                &.active {
+                    background-color: yellow;
+                    & span:nth-child(1) {
+                        position: absolute;
+                        top: -1rem;
+                        left: 0;
+                        width: 100%;
+                        height: 1rem;
+                        background-color: yellow;
+                        border: none;
+                    }
+
+                    & span:nth-child(1)::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rebeccapurple;
+                        border-radius: 0 0 10px 0;
+                    }
+                    & span:nth-child(2) {
+                        position: absolute;
+                        bottom: -1rem;
+                        left: 0;
+                        width: 100%;
+                        height: 1rem;
+                        background-color: yellow;
+                    }
+
+                    & span:nth-child(2)::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rebeccapurple;
+                        border-radius: 0 10px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+
+@mixin transition ($duration , $aniamtion ){
+    -webkit-transition: $duration $aniamtion;
+    transition: $duration $aniamtion;
+    -moz-transition: $duration $aniamtion;
+}

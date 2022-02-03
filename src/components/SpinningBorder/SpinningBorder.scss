@@ -1,0 +1,37 @@
+@import '../../sassStyles/animations';
+@import '../../sassStyles/functions';
+
+
+.spinning-border {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    &::before {
+        content: '';
+        background-image: conic-gradient(getColor(helpers-success) 20deg, transparent 180deg ,getColor(helpers-success) 180deg, transparent 360deg);
+        width: 150%;
+        height: 150%;
+        position: absolute;
+        animation: rotate 3s linear infinite;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: calc(100% - 0.3rem);
+        height: calc(100% - 0.3rem);
+        background-color: white;
+        border-radius: 50%;
+    }
+
+}

@@ -1,0 +1,25 @@
+$colors-light: (
+    text-main:#000000,//done
+    text-light: #696C76,//same
+    text-grey: #b3b3b3,//same
+    text-dimmed: #404040,//done
+    elements-main:#FFFFFF,//done
+    elements-main-medium:#EFF0F5,
+    elements-main-dark:#212221,//
+    helpers-light:#FFFFFF,//same
+    helpers-success:#FF5C5C,//same
+    helpers-pink:#FD6B5F,//same
+);
+
+$colors-dark: (
+    text-main:#FFFFFF,
+    text-light: #696C76,
+    text-grey: #b3b3b3,
+    text-dimmed: #404040,
+    elements-main-medium:#28293D,
+    elements-main:#252535,
+    elements-main-dark:#1C1C27,
+    helpers-light:#FFFFFF,
+    helpers-success:#FF5C5C,
+    helpers-pink:#FD6B5F,
+);

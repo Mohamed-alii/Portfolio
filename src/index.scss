@@ -1,15 +1,31 @@
 @import 'sassStyles/global';
+@import 'sassStyles/functions';
+@import 'sassStyles/colors';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
 
-*
-{
+* {
     @extend %global;
 }
 
-body
-{
-    min-height: 100vh;
+:root { //default theme [Light theme] color variables
+    @each $name, $color in $colors-light{
+        --#{$name}:#{$color};
+    }
 }
 
-.p-1{
+:root[data-theme='dark']  //Dark theme color variables
+{
+    @each $name, $color in $colors-dark{
+        --#{$name}:#{$color};
+    }
+}
+
+body {
+    font-family: 'nunito', sans-serif;
+    min-height: 100vh;
+    background-color: getColor(elements-main-medium);
+}
+
+.p-1 {
     padding: 0.7rem;
 }

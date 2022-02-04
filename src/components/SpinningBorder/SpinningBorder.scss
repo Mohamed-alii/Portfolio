@@ -16,11 +16,11 @@
 
     &::before {
         content: '';
-        background-image: conic-gradient(getColor(helpers-success) 20deg, transparent 180deg ,getColor(helpers-success) 180deg, transparent 360deg);
+        background-image: conic-gradient(getColor(helpers-success) 0deg, transparent 90deg, getColor(helpers-success) 90deg, transparent 180deg, getColor(helpers-success) 180deg, transparent 270deg ,getColor(helpers-success) 270deg, transparent 360deg);
         width: 150%;
         height: 150%;
         position: absolute;
-        animation: rotate 3s linear infinite;
+        animation: rotate 12s linear infinite;
     }
 
     &__content {

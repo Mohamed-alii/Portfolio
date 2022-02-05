@@ -1,25 +1,25 @@
 $colors-light: (
-    text-main:#000000,//done
-    text-light: #696C76,//same
+    text-main:#131313,//done
+    text-light: #a8b3cf,//same
     text-grey: #b3b3b3,//same
     text-dimmed: #404040,//done
-    elements-main:#FFFFFF,//done
-    elements-main-medium:#EFF0F5,
-    elements-main-dark:#28293D,//add this down
+    elements-main-medium:#F1F5F9,
+    elements-main:#CDCAE6,//done
+    elements-main-dark:#131313,//add this down
     helpers-light:#FFFFFF,//same
     helpers-success:#FF8801,//same
     helpers-pink:#FD6B5F,//same
 );
 
 $colors-dark: (
-    text-main:#FFFFFF,
+    text-main:#A6A8D4,
     text-light: #696C76,
     text-grey: #b3b3b3,
     text-dimmed: #404040,
     elements-main-medium:#28293D,
-    elements-main:#252535,
-    elements-main-dark:#1C1C27,
+    elements-main:#1C1C27,
+    elements-main-dark:#1D1C34,
     helpers-light:#FFFFFF,
-    helpers-success:#FF5C5C,
+    helpers-success:#FF8801,
     helpers-pink:#FD6B5F,
 );

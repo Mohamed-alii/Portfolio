@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div className="page-container">
       <Sidebar />
-      <main className="container">
+      <main className="main">
         <Routes>
           <Route path='/' element={<Navigate to='/Home'/>} />
           <Route path='/Home' element={<Home/>} />

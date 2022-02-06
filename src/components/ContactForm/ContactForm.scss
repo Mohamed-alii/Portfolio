@@ -1,0 +1,53 @@
+@import '../../sassStyles/functions';
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    flex: 1;
+
+    &__name-input,
+    &__subject-input,
+    &__message-input,
+    &__email-input {
+        background-color: getColor(elements-main-medium);
+        border: 2px solid transparent;
+        border-radius: 5px;
+        outline: none;
+        padding: 1rem;
+        margin-bottom: 0.9rem;
+        color: getColor(text-main);
+        font-size: 0.9rem;
+
+        &:focus {
+            border-color: getColor(helpers-success);
+        }
+    }
+
+
+    &__message-input {
+        min-height: 6rem;
+    }
+
+    &__submit-btn {
+        display: flex;
+        padding: 0.8rem 3rem;
+        margin-bottom: 0.5rem;
+        max-width: max-content;
+        border-radius: 5px;
+        border: 1px solid getColor(helpers-success);
+        background-color: getColor(helpers-success);
+        font-size: 1rem;
+        font-weight: 600;
+        color: getColor(helpers-light);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            color: getColor(helpers-success);
+            background-color: getColor(helpers-light);
+        }
+    }
+}

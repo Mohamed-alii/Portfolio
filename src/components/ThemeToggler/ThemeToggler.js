@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./ThemeToggler.scss";
 import { BsSunFill, BsMoonFill } from "react-icons/bs";
 
-const ThemeToggler = ({showCheckbox}) => {
+const ThemeToggler = () => {
 
     const [isDarkTheme, setIsDarkTheme] = useState(false);
 
@@ -23,7 +23,7 @@ const ThemeToggler = ({showCheckbox}) => {
       };
 
   return (
-    <div className={`theme-checkbox ${showCheckbox ? '' : 'hide'}`}onClick={themeTogglerHanlder}>
+    <div className='theme-checkbox' onClick={themeTogglerHanlder}>
       <BsMoonFill className="theme-checkbox__moon"/>
       <BsSunFill className="theme-checkbox__sun"/>
       <span className={`theme-checkbox__ball ${isDarkTheme? 'dark' : ''}`}></span>

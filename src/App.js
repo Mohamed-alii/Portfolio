@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import "./App.scss";
 import Sidebar from "./components/Sidebar/Sidebar";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { Home, About, Contact, Portfolio } from "./pages";
+import ColorSwitcher from "./components/ColorSwitcher/ColorSwitcher";
 
 const App = () => {
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const root = document.documentElement;
     // changing helpers colors 
     // root.style.setProperty('--helpers-success' , 'red')
@@ -21,6 +22,7 @@ const App = () => {
   return (
     <div className="page-container">
       <Sidebar />
+      <ColorSwitcher />
       <main className="main">
         <Routes>
           <Route path='/' element={<Navigate to='/Home'/>} />

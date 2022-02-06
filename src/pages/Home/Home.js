@@ -3,8 +3,10 @@ import "./Home.scss";
 import developerImg from "../../assets/developer.png";
 import { BsDownload, BsGithub, BsLinkedin, BsFacebook } from "react-icons/bs";
 import { FiCodepen } from "react-icons/fi";
+import  cv  from '../../assets/Mohamed Mahmoud .pdf';
 
 const Home = () => {
+
   return (
     <header className="header">
       <div className="header__img-wrapper">
@@ -21,7 +23,7 @@ const Home = () => {
         <a title="Facebook"><BsFacebook size={23} /></a>
       </div>
       <div className="header__cv">
-        <a className="header__btn">
+        <a href={cv} download='Mohamed Mahmoud.pdf' className="header__btn">
           <span className="header__btn-text">Download CV</span>
           <span className="header__btn-icon">
             <BsDownload />

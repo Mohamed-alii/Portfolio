@@ -26,7 +26,7 @@
         position: relative;
         width: 100%;
         height: 0.15rem;
-        background-color: getColor(text-light);
+        background-color: getColor(text-grey);
         border-radius: $rounded-border;
         @include transition( 0.4s , ease);
         &.opened{
@@ -38,7 +38,7 @@
             position: absolute;
             width: 100%;
             height: 0.15rem;
-            background-color: getColor(text-light);
+            background-color: getColor(text-grey);
             border-radius: $rounded-border;
             @include transition( 0.4s , ease);
         }

@@ -1,0 +1,63 @@
+@import '../../sassStyles/functions';
+
+.color-switcher
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    background-color: getColor(elements-main-medium);
+    border-radius: 5px;
+    top: 5rem;
+    right: 0;
+    margin-right: 0.5rem;
+    padding: 0.6rem;
+    transition: all 0.4s ease-in-out;
+    z-index: 10;
+    &.slide-left{
+        transform: translateX(0);
+    }
+    &.slide-right{
+        transform: translateX(100%);
+        margin-right: 0rem;
+    }
+
+    &__icon-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-radius: 50%;
+        top: 0;
+        left: -3.2rem;
+        background-color: getColor(elements-main-medium);
+        padding: 0.2rem;
+        cursor: pointer;
+    }
+
+    &__icon{
+        color: getColor(text-main);
+        transition: all 0.2s ease-in-out;
+        &:hover{
+        color: getColor(helpers-success);
+
+        }
+    }
+    &__colors
+    {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 0.5rem;
+        padding: 1rem;
+        position: relative;
+    }
+
+    &__theme-toggler{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0.8rem;
+    }
+}

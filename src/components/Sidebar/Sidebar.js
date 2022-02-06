@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 import ThemeToggler from "../ThemeToggler/ThemeToggler";
 
 const Sidebar = () => {
-  const [opened, setOpened] = useState(true);
+  const [opened, setOpened] = useState(false);
 
   const sidebarToggler = () => {
     setOpened((prevState) => !prevState);
@@ -72,9 +72,7 @@ const Sidebar = () => {
           </li>
         </ul>
       </nav>
-      <div className="sidebar__theme-toggler">
-        <ThemeToggler showCheckbox={opened}/> 
-      </div>
+
     </aside>
   );
 };

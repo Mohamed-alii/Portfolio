@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import { BsGithub, BsLinkedin, BsFacebook } from "react-icons/bs";
-import { CgScreen } from 'react-icons/cg'
+import { BsGithub } from "react-icons/bs";
+import { MdOutlineWeb } from 'react-icons/md';
 import "./BubbleBgCard.scss";
 
 const BubbleBgCard = ({ image, bgColor, children, githubUrl, liveUrl }) => {
@@ -59,7 +59,7 @@ const BubbleBgCard = ({ image, bgColor, children, githubUrl, liveUrl }) => {
                 <p>repo</p>
               </a>
               <a href={liveUrl} target="_blanck">
-                <CgScreen className="card__content-overlay__icon" size={40}/>
+                <MdOutlineWeb className="card__content-overlay__icon" size={48}/>
                 <p>Live</p>
               </a>
             </div>

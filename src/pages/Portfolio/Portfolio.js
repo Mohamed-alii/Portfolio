@@ -2,7 +2,6 @@ import React , { useContext } from "react";
 import "./Portfolio.scss";
 import HeaderShadow from "../../components/HeaderShadow/HeaderShadow";
 import BubbleBgCard from "../../components/BubbleBgCard/BubbleBgCard";
-import developerImg from "../../assets/developer.png";
 import ColorsContext from "../../store/colors-store";
 
 const Portfolio = () => {

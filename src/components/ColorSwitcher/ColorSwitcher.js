@@ -5,22 +5,22 @@ import { IoColorPaletteOutline } from "react-icons/io5";
 import ThemeToggler from "../ThemeToggler/ThemeToggler";
 
 const colorsHexaArray = [
-  { name: "redColor", color: "#FF3B3B" },
-  { name: "greenColor", color: "#05C270" },
-  { name: "blueColor", color: "#0063F8" },
-  { name: "orangeColor", color: "#FF8801" },
-  { name: "cyanColor", color: "#00CFDD" },
-  { name: "purpleColor", color: "#6500CD" },
+  { name: "red", color: "#FF3B3B" },
+  { name: "green", color: "#05C270" },
+  { name: "blue", color: "#0063F8" },
+  { name: "orange", color: "#FF8801" },
+  { name: "cyan", color: "#00CFDD" },
+  { name: "purple", color: "#6500CD" },
 ];
 
 const ColorSwitcher = () => {
-  const [switcherIsOpened, setSwitcherIsOpened] = useState(true);
+  const [switcherIsOpened, setSwitcherIsOpened] = useState(false);
 
   const colorPaletteTogglerHandler = () => {
       setSwitcherIsOpened((prevState) => !prevState);
   };
 
-  const colorsList = colorsHexaArray.map((color, index) => <Color key={`${index + color.color}`} color={color} colorsHexaArray={colorsHexaArray}/>);
+  const colorsList = colorsHexaArray.map((color, index) => <Color key={`${index + color.color}`} color={color}/>);
 
   return (
     <div className={`color-switcher ${switcherIsOpened ? "slide-left" : "slide-right"}`}>

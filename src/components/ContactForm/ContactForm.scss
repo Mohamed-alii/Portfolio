@@ -17,13 +17,24 @@
         border-radius: 5px;
         outline: none;
         padding: 1rem;
-        margin-bottom: 0.9rem;
+        margin-top: 0.9rem;
         color: getColor(text-main);
         font-size: 0.9rem;
 
         &:focus {
             border-color: getColor(helpers-success);
         }
+    }
+
+    & .invalid{
+        background-color: #F8E2E2;
+        border: 2px solid red;
+    }
+
+    & .error-msg{
+        padding-top: 0.2rem;
+        padding-left: 0.5rem;
+        color: red;
     }
 
 
@@ -34,7 +45,7 @@
     &__submit-btn {
         display: flex;
         padding: 0.8rem 3rem;
-        margin-bottom: 0.5rem;
+        margin-top: 0.9rem;
         max-width: max-content;
         border-radius: 5px;
         border: 1px solid getColor(helpers-success);

@@ -1,0 +1,114 @@
+@import '../../sassStyles/functions';
+@import '../../sassStyles/colors';
+@import '../../sassStyles/mixins';
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    max-height: max-content;
+    border-radius: 10px;
+    background-color: getColor(elements-main-medium);
+}
+
+.card__img-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card__img-wrapper img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.card__content
+{
+    height: 100%;
+}
+
+.card__content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.card__content-overlay__container {
+    padding: 1rem;
+    color: azure;
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: 0.3s 0.2s;
+    width: 100%;
+}
+
+.card:hover .card__content-overlay__container{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card__content-overlay__icon
+{
+    cursor: pointer;
+}
+
+.card__content-overlay__icon-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 0.6rem;
+    margin-top: 1rem;
+    a 
+    {
+        cursor: pointer;
+
+        p
+        {
+            @include transition(0.1s, linear);
+        }
+
+        &:hover
+        {
+            p
+            {
+                color: getColor(elements-main-dark);
+            }
+        }
+    }
+    
+}
+
+.card__bubble
+{
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    width: 0px;
+    height: 0px;
+    display: block;
+    transform: translate(-50% , -50%);
+    transition: width 0.8s , height 0.8s;
+    border-radius: 50%;
+}
+
+.card:hover .card__bubble
+{
+    width: 1500px;
+    height: 1500px;
+}

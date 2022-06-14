@@ -1,19 +1,24 @@
-import React from "react";
-import "./Home.scss";
-import developerImg from "../../assets/developer.png";
-import { BsDownload, BsGithub, BsLinkedin, BsFacebook } from "react-icons/bs";
+import React, { useContext } from "react";
+import { BsGithub, BsLinkedin, BsFacebook } from "react-icons/bs";
 import { FiCodepen } from "react-icons/fi";
+import DeveloperImg from "../../components/DeveloperImg/DeveloperImg";
 import  cv  from '../../assets/Mohamed Mahmoud .pdf';
+import lamp from '../../assets/lamp.png'
+import ColorsContext from "../../store/colors-store";
+import "./Home.scss";
 
 const Home = () => {
+
+  const colorsCxt = useContext(ColorsContext);
 
   return (
     <header className="header">
       <div className="header__img-wrapper">
-        <img src={developerImg} alt="developer picture" />
+        { (colorsCxt.isCurrentThemeDark && lamp) && <img className="lamp" src={lamp} alt='lamp'/>}
+        <DeveloperImg />
       </div>
       <div className="header__title">
-        <h2>Mohamed Mahmoud</h2>
+        <h2>Mohamed Abd Al-Qader</h2>
         <p>I'm a Front-End Developer.</p>
       </div>
       <div className="header__socials">
@@ -23,11 +28,8 @@ const Home = () => {
         <a title="Facebook"><BsFacebook size={23} /></a>
       </div>
       <div className="header__cv">
-        <a href={cv} download='Mohamed Mahmoud.pdf' className="header__btn">
-          <span className="header__btn-text">Download CV</span>
-          <span className="header__btn-icon">
-            <BsDownload />
-          </span>
+        <a href={cv} download='Mohamed Abd El-Qader.pdf' className="cross_line">
+                Download CV 
         </a>
       </div>
     </header>

@@ -1,11 +1,11 @@
 $colors-light: (
-    text-main:#131313,//done
-    text-light: #202124,//same
+    text-main:#131313,
+    text-light: #202124,
     text-grey: #b3b3b3,//same
-    text-dimmed: #404040,//done
+    text-dimmed: #404040,
     elements-main-medium:#F1F5F9,
-    elements-main:#CDCAE6,//done
-    elements-main-dark:#131313,//add this down
+    elements-main:#CDCAE6,
+    elements-main-dark:#131313,
     helpers-light:#FFFFFF,//same
     helpers-success:#FF8801,//same
     helpers-pink:#FD6B5F,//same
@@ -14,12 +14,12 @@ $colors-light: (
 $colors-dark: (
     text-main:#A6A8D4,
     text-light: #a8b3cf,
-    text-grey: #b3b3b3,
+    text-grey: #b3b3b3,//same
     text-dimmed: #404040,
     elements-main-medium:#28293D,
     elements-main:#1C1C27,
     elements-main-dark:#1D1C34,
-    helpers-light:#FFFFFF,
-    helpers-success:#FF8801,
-    helpers-pink:#FD6B5F,
+    helpers-light:#FFFFFF,//same
+    helpers-success:#FF8801,//same
+    helpers-pink:#FD6B5F,//same
 );

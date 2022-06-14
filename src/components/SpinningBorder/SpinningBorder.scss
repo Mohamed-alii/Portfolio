@@ -16,7 +16,13 @@
 
     &::before {
         content: '';
-        background-image: conic-gradient(getColor(helpers-success) 0deg, transparent 90deg, getColor(helpers-success) 90deg, transparent 180deg, getColor(helpers-success) 180deg, transparent 270deg ,getColor(helpers-success) 270deg, transparent 360deg);
+        background-image: conic-gradient(getColor(helpers-success) 0deg,
+    transparent 60deg, getColor(helpers-success) 60deg,
+        transparent 120deg, getColor(helpers-success) 120deg,
+        transparent 180deg ,getColor(helpers-success) 180deg,
+                         transparent 240deg, getColor(helpers-success) 240deg,
+                         transparent 300deg ,getColor(helpers-success) 300deg,
+                         transparent 360deg);
         width: 150%;
         height: 150%;
         position: absolute;

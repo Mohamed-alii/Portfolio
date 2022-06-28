@@ -5,7 +5,7 @@ import ColorsContext from '../../store/colors-store';
 
 const ThemeToggler = () => {
 
-    const [isDarkTheme, setIsDarkTheme] = useState(true);
+    const [isDarkTheme, setIsDarkTheme] = useState(false);// here we apply default theme value
     const colorsCxt = useContext(ColorsContext);
 
     useLayoutEffect(() => {
@@ -23,7 +23,6 @@ const ThemeToggler = () => {
           ...colorsCxt,
           isCurrentThemeDark: false
         })
-        //this will apply the default root which is light theme
       }
   
     }, [isDarkTheme]);

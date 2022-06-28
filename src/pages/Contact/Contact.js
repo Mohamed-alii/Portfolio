@@ -32,6 +32,7 @@ const Contact = () => {
               <h4>+20-111-646-8062</h4>
             </div>
           </div>
+          
         </div>
       </div>
     </section>

@@ -20,7 +20,7 @@ const Portfolio = () => {
             <div className="portfolio-content__card-content">
               <h2 className="m-t-1 m-b-1 bubble-card__header">Moviez</h2>
               <p className="text-left pl-1 pr-1 m-b-1 min-height-3">
-                  Website that displays movies and Tv series and thier news.
+                  Web application that displays movies and Tv series trending, top rated, now playing , etc...
               </p>
               <div className="portfolio-content__card-content__skills m-b-1 pl-1">
                 <span className="portfolio-content__card-content__skill">HTML 5</span>

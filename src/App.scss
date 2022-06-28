@@ -10,3 +10,25 @@
     width: 80%;
     margin: 0 auto;
 }
+
+//desktop and large devices
+@media screen and (max-width:  1200px ) {// [992 - 1200]
+
+}
+
+// tablets and medium devices
+@media screen and (max-width:  991px ) {// [768 - 991]
+    .main{
+        height: 100%;
+        width: 90%;
+    }
+}
+
+// mobile devices
+@media screen and (max-width:  767px ) {// [0 - 767]
+    .main{
+        height: 100%;
+        width: 95%;
+    }
+}
+

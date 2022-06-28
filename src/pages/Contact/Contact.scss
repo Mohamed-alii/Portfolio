@@ -34,3 +34,24 @@
     }
 
 }
+
+//desktop and large devices
+@media screen and (max-width:  1200px ) {// [992 - 1200]
+
+}
+
+// tablets and medium devices
+@media screen and (max-width:  991px ) {// [768 - 991]
+
+    .contact__content
+    {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+}
+
+// mobile devices
+@media screen and (max-width:  767px ) {// [0 - 767]
+
+    
+}

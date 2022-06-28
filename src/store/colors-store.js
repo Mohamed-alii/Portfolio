@@ -2,14 +2,14 @@ import react, { useState } from "react";
 
 const ColorsContext = react.createContext({
   currentColor: {},
-  isCurrentThemeDark: true,
+  isCurrentThemeDark: false,
   changeColor: () => {},
 });
 
 export const ColorsContextProvider = (props) => {
 
     const [currentColor, setCurrentColor] = useState({color:"#FF8801" , name: 'orange'});//orange
-    const [isCurrentThemeDark, SetIsCurrentThemeDark] = useState(true);//default theme is dark
+    const [isCurrentThemeDark, SetIsCurrentThemeDark] = useState(false);//default theme is light
 
     const changeColor = ({currentColor, isCurrentThemeDark }) => {
         setCurrentColor(currentColor);

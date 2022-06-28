@@ -53,11 +53,12 @@
     color: azure;
     transform: translateY(2rem);
     opacity: 0;
-    transition: 0.3s 0.2s;
+    transition: 0.3s 0.1s;
     width: 100%;
 }
 
 .card:hover .card__content-overlay__container{
+    transition: 0.3s 0.2s;
     transform: translateY(0);
     opacity: 1;
 }
@@ -88,7 +89,7 @@
             p
             {
                 color: getColor(elements-main-dark);
-                font-weight: bold;
+                font-weight: 800;
             }
         }
     }

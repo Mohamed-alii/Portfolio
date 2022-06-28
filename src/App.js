@@ -1,16 +1,17 @@
 import React from "react";
 import "./App.scss";
 import Sidebar from "./components/Sidebar/Sidebar";
+import BottomNavBar from "./components/BottomNavBar/BottomNavBar";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { Home, About, Contact, Portfolio } from "./pages";
 import ColorSwitcher from "./components/ColorSwitcher/ColorSwitcher";
-import ColorsContext from "./store/colors-store";
 
 const App = () => {
 
   return (
     <div className="page-container">
       <Sidebar />
+      <BottomNavBar />
       <ColorSwitcher />
       <main className="main">
         <Routes>

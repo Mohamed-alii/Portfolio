@@ -1,0 +1,66 @@
+@import '../../sassStyles/variables';
+@import '../../sassStyles/functions';
+
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: getColor(elements-main-dark);
+  }
+
+  &__list-item {
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    color: getColor(text-grey);
+    border-radius: 10px;
+
+
+    &:hover {
+        background-color: getColor(helpers-success);
+        transform: translateY(-20%);
+        border-radius: 10px;
+        color: white;
+
+    }
+
+    &.active
+    {
+        background-color: getColor(helpers-success);
+        transform: translateY(-20%);
+        border-radius: 10px;
+        color: white;
+
+    }
+  }
+}
+
+//desktop and large devices
+@media screen and (max-width:  1200px ) {// [992 - 1200]
+
+
+}
+
+// tablets and medium devices
+@media screen and (max-width:  991px ) {// [768 - 991]
+
+}
+
+// mobile devices
+@media screen and (max-width:  767px ) {// [0 - 767]
+
+    .bottom-navbar__list-item
+    {
+      margin: 0 0.5rem;
+      padding: 0.6rem 1.2rem;
+    }
+}

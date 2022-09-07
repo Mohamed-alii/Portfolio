@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
-import "./ContactForm.scss";
 import emailjs from "@emailjs/browser";
 import { FiSend } from "react-icons/fi";
+import "./ContactForm.scss";
 
 const ContactForm = () => {
   const [nameError, setNameError] = useState(null);
@@ -15,40 +15,46 @@ const ContactForm = () => {
   const formRef = useRef();
 
   const validateName = (name) => {
-    const nameInputValidation = null; // cannot contain a number or empty
-    return name.test();
+    const nameInputValidation = new RegExp(/^([^0-9]*)$/); // cannot contain a number or empty
+    return (nameInputValidation.test(name) && (name ? true : false));
   };
   const validateEmail = (email) => {
-    const emailInputValidation = null; // valid email
-    return email.test();
+    const emailInputValidation = new RegExp(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/); // valid email
+    return emailInputValidation.test(email.toLowerCase());
   };
   const validateMessage = (message) => {
-    const messageInputValidation = null; // can not be empty
-    return message.test();
+    const messageInputValidation = message.trim() ? true : false; // can not be empty
+    return messageInputValidation;
   };
 
   const contactSubmitHandler = (e) => {
     e.preventDefault();
-    const nameInput = nameRef.current.value;
-    const subjectInput = subjectRef.current.value;
-    const emailInput = emailRef.current.value;
-    const messageInput = messageRef.current.value;
+    const nameInputValue = nameRef.current.value;
+    const emailInputValue = emailRef.current.value;
+    const messageInputValue = messageRef.current.value;
 
-    if (!validateName(nameInput)) {
-      setNameError("error"); //error msg
+    if (!validateName(nameInputValue)) {
+      setNameError("Please enter your name"); //error msg
     } else {
-      setNameError(null); //error msg
+      setNameError(null);
     }
-    if (!validateEmail(emailInput)) {
-      setNameError("Please enter a valid email."); //erroe msg
+    if (!validateEmail(emailInputValue)) {
+      setEmailError("Please enter a valid email."); //erroe msg
     } else {
+      setEmailError(null);
     }
-    if (!validateMessage(messageInput)) {
-      setNameError("Message can not be empty"); //erroe msg
+    if (!validateMessage(messageInputValue)) {
+      setMessageError("Please enter your message"); //erroe msg
     } else {
+      setMessageError(null);
     }
-    // emailjs
-    //separate function call after validation
+
+    if(validateName(nameInputValue) && validateEmail(emailInputValue) && validateMessage(messageInputValue)){
+      sendFormData();
+    }
+  };
+
+  const sendFormData = () => {
     emailjs
       .sendForm(
         "service_fxaivcf",
@@ -86,7 +92,7 @@ const ContactForm = () => {
       <input
         className={`form__email-input ${emailError ? "invalid" : ""}`}
         ref={emailRef}
-        type="email"
+        type="text"
         name="guest_email"
         placeholder="Email"
       />

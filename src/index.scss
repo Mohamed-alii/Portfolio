@@ -129,6 +129,11 @@ a {
   margin-bottom: 5rem;
 }
 
+.m-b-100
+{
+  margin-bottom: 100px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -183,8 +188,8 @@ a {
     }
 }
 
-// mobile devices
-@media screen and (max-width:  767px ) {// [0 - 767]
+// small tablets and medium devices
+@media screen and (max-width:  767px ) {// [481 - 767]
 
     .bottom-navbar
     {
@@ -195,6 +200,11 @@ a {
     {
         display: none;
     }
+}
+
+// mobile devices
+@media screen and (max-width:  480px ) {// [0 - 480]
+
 }
 
 

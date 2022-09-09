@@ -51,7 +51,33 @@
 }
 
 // mobile devices
-@media screen and (max-width:  767px ) {// [0 - 767]
+@media screen and (max-width:  767px ) {// [481 - 767]
 
-    
+}
+
+// mobile devices
+@media screen and (max-width:  480px ) {// [0 - 480]
+    .contact{
+
+        &__info
+        {
+            overflow: hidden;
+        }
+
+        &__info-title
+        {
+            padding-left: 0rem;
+        }
+
+        &__info-title h4
+        {
+            font-size: 0.8rem;
+        }
+
+        &__info-title svg
+        {
+            width: 25px;
+            height: 25px;
+        }
+    }
 }

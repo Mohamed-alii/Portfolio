@@ -114,7 +114,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  // [0 - 700]
+  // [481 - 700]
 
   .about {
     margin-bottom: 5rem;
@@ -141,3 +141,43 @@
 
   }
 }
+
+// mobile devices
+@media screen and (max-width:  480px ) {// [0 - 480]
+  .about {
+
+    &__summary
+    {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+    } 
+
+    &__skills{
+      flex-direction: column;
+    }
+
+    &__skills__skill{
+      width: 100%;
+      padding-left: 0.7rem;
+    }
+
+    &__skills__skill p{
+      padding-left: 0.5rem;
+    }
+
+    &__experience-content{
+      padding-left: 0rem !important;
+
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &__experience-list{
+      padding-left: 0.5rem !important;
+    }
+
+  }
+}
+

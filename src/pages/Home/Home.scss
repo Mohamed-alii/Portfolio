@@ -42,6 +42,10 @@
         color: getColor(text-main);
         margin-bottom: 1rem;
         text-align: center;
+
+        h1{
+            font-size: 1.6rem;
+        }
     }
 
     &__socials {
@@ -147,15 +151,36 @@
     }
 }
 
-// mobile devices
-@media screen and (max-width:  767px ) {// [0 - 767]
+//desktop and large devices
+@media screen and (max-width:  1200px ) {// [992 - 1200]
 
 }
+
 // tablets and medium devices
 @media screen and (max-width:  991px ) {// [768 - 991]
 
 }
-//desktop and large devices
-@media screen and (max-width:  1200px ) {// [992 - 1200]
 
+// small tablets and medium devices
+@media screen and (max-width:  767px ) {// [481 - 767]
+
+}
+
+// mobile devices
+@media screen and (max-width:  480px ) {// [0 - 480]
+    .header
+    {
+        &__title h1{
+            font-size: 1rem;
+        }
+
+        &__title p{
+            font-size: 0.8rem;
+        }
+
+        &__img-wrapper
+        {
+            margin-bottom: 0rem;
+        }
+    }
 }

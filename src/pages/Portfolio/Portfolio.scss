@@ -91,6 +91,14 @@
             padding: 1rem;
         } 
     }
+}
 
-
+// mobile devices
+@media screen and (max-width:  480px ) {// [0 - 480]
+    .portfolio{
+        &-content
+        {
+            padding: 0.5rem !important;
+        }
+    }
 }

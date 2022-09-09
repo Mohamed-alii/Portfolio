@@ -31,3 +31,10 @@
     }
 }
 
+// mobile devices
+@media screen and (max-width:  480px ) {// [0 - 480]
+    .header-shadow__overlay{
+        font-size: 3rem;
+    }
+}
+

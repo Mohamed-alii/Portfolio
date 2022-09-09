@@ -111,19 +111,22 @@ const About = () => {
             <h3 className="m-b-1">Responsibilities</h3>
             <ul className="about__experience-list pl-1">
               <li>
-                <p>Building new features using Angular TS</p>
-              </li>
-              <li>
-                <p>Enhancing projects built using Angularjs</p>
-              </li>
-              <li>
-                <p>Being part of scrum team </p>
-              </li>
-              <li>
                 <p>
-                  Working closely with UX designers, backend developers and
-                  product managers to develop client-side web Apps
+                  Working closely with UX designers, backend developers, testers and
+                  product managers to develop client-side web Apps.
                 </p>
+              </li>
+              <li>
+                <p>Building new features using Angular TS.</p>
+              </li>
+              <li>
+                <p>Enhancing projects built using Angularjs.</p>
+              </li>
+              <li>
+                <p>Upgrading modules from angularjs to Angular TS.</p>
+              </li>
+              <li>
+                <p>Being part of scrum team. </p>
               </li>
             </ul>
           </div>

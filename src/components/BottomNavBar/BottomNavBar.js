@@ -8,17 +8,17 @@ const BottomNavBar = () => {
   return (
     <nav className="bottom-navbar">
       <ul className="bottom-navbar__list">
-        <NavLink to='/Home' className='bottom-navbar__list-item'>
-            <AiOutlineHome />
+        <NavLink to="/Home" className="bottom-navbar__list-item">
+          <AiOutlineHome />
         </NavLink>
-        <NavLink to='/About' className='bottom-navbar__list-item'>
-            <AiOutlineMessage />
+        <NavLink to="/About" className="bottom-navbar__list-item">
+          <BsPerson />
         </NavLink>
-        <NavLink to='/Portfolio' className='bottom-navbar__list-item'>
-            <BsBriefcase />
+        <NavLink to="/Portfolio" className="bottom-navbar__list-item">
+          <BsBriefcase />
         </NavLink>
-        <NavLink to='/Contact' className='bottom-navbar__list-item'>
-            <BsPerson />
+        <NavLink to="/Contact" className="bottom-navbar__list-item">
+          <AiOutlineMessage />
         </NavLink>
       </ul>
     </nav>

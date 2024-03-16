@@ -17,16 +17,23 @@ const About = () => {
     <section className="about">
       <HeaderShadow headerTitle="About me" />
       <div className="about__summary m-b-3">
-        <p className="m-b-1">Hello, I am Mohamed Abd El-Qader.</p>
+        <p className="m-b-1">Hello, I am Mohamed Abd El-Qader, A Front-End Developer based in Egypt.</p>
         <p className="m-b-1">
-          I'm a Junior Frontend Developer with a passion for combining the art
-          of design with the art of programming using the latest technologies.
+            I am a passionate Frontend Developer skilled in merging
+            design and programming using the latest technologies. Seeking a challenging career opportunity with an esteemed
+            organization that appreciates hard work and offers room for
+            personal growth. Detail-oriented with a strong eye for
+            design aesthetics and a dedication to delivering high-quality
+            code within project timelines. Eager to contribute technical
+            expertise, creativity, and a strong work ethic to drive
+            innovation and excellence in frontend development.
         </p>
         <p className="m-b-1">
           I have extensive knowledge of HTML5 , css3 , bootstrap, JavaScript,
           Angular and React Combined with my communication and problem-solving
           skills.
         </p>
+
       </div>
 
       <h2 className="m-b-1">Skills</h2>
@@ -73,6 +80,7 @@ const About = () => {
       </div>
 
       <h2 className="m-b-1">Experience</h2>
+      {/* itworx */}
       <div className="about__experience m-b-3">
         <div className="about__experience-container h-100">
           <div className="d-flex-col justify-content-between h-100 text-left">
@@ -112,8 +120,8 @@ const About = () => {
             <ul className="about__experience-list pl-1">
               <li>
                 <p>
-                  Working closely with UX designers, backend developers, testers and
-                  product managers to develop client-side web Apps.
+                  Working closely with UX designers, backend developers, testers
+                  and product managers to develop client-side web Apps.
                 </p>
               </li>
               <li>
@@ -132,6 +140,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+import { Helmet } from "react-helmet";
 import Sidebar from "./components/Sidebar/Sidebar";
 import BottomNavBar from "./components/BottomNavBar/BottomNavBar";
 import { Route, Routes, Navigate } from "react-router-dom";
@@ -10,6 +11,9 @@ const App = () => {
 
   return (
     <div className="page-container">
+      <Helmet>
+        <meta name="description" content="Frontend Developer personal website" />
+      </Helmet>
       <Sidebar />
       <BottomNavBar />
       <ColorSwitcher />

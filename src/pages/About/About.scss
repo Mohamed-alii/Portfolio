@@ -5,6 +5,13 @@
   min-height: 100vh;
   color: getColor(text-main);
 
+  &__summary
+  {
+    background: var(--elements-main-medium);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
   &__skills {
     display: flex;
     flex-wrap: wrap;

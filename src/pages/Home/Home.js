@@ -23,7 +23,7 @@ const Home = () => {
       <div className="header__socials">
         <a target="_blanck" href="https://github.com/Mohamed-alii" title="Github"><BsGithub size={23} /></a>
         <a target="_blanck" href="https://www.linkedin.com/in/mohamed-abd-el-qader-479bb5146/" title="Linked In"><BsLinkedin size={23} /></a>
-        <a target="_blanck" href="https://www.instagram.com/mohamed.m.abdelkader/?hl=en" title="Codepen"><BsInstagram size={23} /></a>
+        <a target="_blanck" href="https://www.instagram.com/m__abdelqader/?fbclid=IwAR2vDg7usZhbMpvtdJhCIODvu51vmv8er3lWf1k4ruAS-YKrj5vIoSTrZIQ" title="Codepen"><BsInstagram size={23} /></a>
         <a target="_blanck" href="https://www.facebook.com/profile.php?id=100003335050703" title="Facebook"><BsFacebook size={23} /></a>
       </div>
       <div className="header__cv m-b-100">
